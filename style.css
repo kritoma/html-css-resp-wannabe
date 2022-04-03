@@ -72,19 +72,30 @@ img {
   clear: both;
 }
 
-/* responsive */
 @media screen and (max-width: 420px) {
-  /* header */
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
   body{
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
+  .container{
+    max-width: 420px;
+    padding: 10px;
+  }
   .row{
+    width: auto;
    max-width: 420px;
    display: flex;
    flex-direction: column;
    align-items: center;
+   margin-top: 0;
   }
 
   .left, .right, .central{
@@ -99,3 +110,4 @@ img {
     margin: 0;
   }
 }
+
